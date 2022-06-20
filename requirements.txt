@@ -1,0 +1,17 @@
+comet_ml
+matplotlib
+mrcfile
+numpy
+opencv-python
+pandas
+pillow==8.2.0
+plyfile
+git+https://github.com/fadel/pytorch_ema
+scikit-image
+scikit-video
+scipy
+torch==1.7.0
+torch-fidelity>=0.3.0
+torchvision==0.8.1
+tqdm
+wandb
