@@ -73,11 +73,12 @@ Render images and a video interpolating between 2 images.
 `python linear_interpolation --path=/PATH_TO/checkpoint_train.pth --output_dir=/PATH_TO_WRITE_TO/`
 
 ### Hybrid Optimization
-Since our model is feed-forward and uses a reletively latent codes, it most likely will not perform that well on yourself/very familiar faces, since the details may not be fully captured by a single pass. Therefore, we provide a script performing hybrid optimization: predict a latent code using our model, then perform latent optimization as introduced in pi-GAN. The command to use is:
+Since our model is feed-forward and uses a relatively compact latent codes, it most likely will not perform that well on yourself/very familiar faces---the details are very challenging to be fully captured by a single pass. Therefore, we provide a script performing hybrid optimization: predict a latent code using our model, then perform latent optimization as introduced in pi-GAN. The command to use is:
 
 `
 python --path PRETRAINED_MODEL_PATH --output_dir OUTPUT_DIRECTORY --curriculum ["celeba" or "carla" or "srnchairs"] --img_path /PATH_TO_IMAGE_TO_OPTIMIZE/   
 `
+Note that compare with vanilla pi-GAN inversion, we need significantly less iterations.
 
 ## Pretrained model
 We provide pretrained model checkpoint files for the three datasets. Download from https://www.dropbox.com/s/lcko0wl8rs4k5qq/pretrained_models.zip?dl=0 and unzip to use.
@@ -95,4 +96,4 @@ We provide pretrained model checkpoint files for the three datasets. Download fr
 ```
 
 ## Acknowledgements
-The code repo is built upon https://github.com/marcoamonteiro/pi-GAN. We thank the authors for releasing the code and provide support throughout the development of this project.
+The code repo is built upon https://github.com/marcoamonteiro/pi-GAN. We thank the authors for releasing the code and providing support throughout the development of this project.
