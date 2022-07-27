@@ -64,6 +64,7 @@ class carla(Dataset):
         self.data.sort()
         random.shuffle(self.data)
         # CARLA is an extrmely small dataset with only 10k images.
+        # After all, it's not the most suitable dataset when we include reconstruction.
         # We used these splits during the development stage,
         # but for final evaluation, we trained on all images and
         # test on 8000 images to match prior works for FID, KID and IS.
