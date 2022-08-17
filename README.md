@@ -40,13 +40,13 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python3 train_con.py --curriculum=celeba --output_d
 CARLA
 
 `
-CUDA_VISIBLE_DEVICES=0,1,2,3 python3 train_con.py --curriculum=carla --output_dir='/PATH_TO_OUTPUT/' --dataset_dir='/PATH_TO/srn_chairs' --encoder_type='CCS' --recon_lambda=5 --ssim_lambda=1 --vgg_lambda=1 --pos_lambda_gen=15 --lambda_e_latent=1 --lambda_e_pos=1 --cond_lambda=1 --load_encoder=1
+CUDA_VISIBLE_DEVICES=0,1,2,3 python3 train_con.py --curriculum=srnchairs --output_dir='/PATH_TO_OUTPUT/' --dataset_dir='/PATH_TO/carla/*.png' --encoder_type='CCS' --recon_lambda=5 --ssim_lambda=1 --vgg_lambda=1 --pos_lambda_gen=15 --lambda_e_latent=1 --lambda_e_pos=1 --cond_lambda=1 --load_encoder=1
 `
 
 SHAPENET CHAIRS
 
 `
-CUDA_VISIBLE_DEVICES=0,1,2,3 python3 train_con.py --curriculum=srnchairs --output_dir='/PATH_TO_OUTPUT/' --dataset_dir='/PATH_TO/carla/*.png' --encoder_type='CCS' --recon_lambda=5 --ssim_lambda=1 --vgg_lambda=1 --pos_lambda_gen=15 --lambda_e_latent=1 --lambda_e_pos=1 --cond_lambda=1 --load_encoder=1
+CUDA_VISIBLE_DEVICES=0,1,2,3 python3 train_con.py --curriculum=carla --output_dir='/PATH_TO_OUTPUT/' --dataset_dir='/PATH_TO/srn_chairs' --encoder_type='CCS' --recon_lambda=5 --ssim_lambda=1 --vgg_lambda=1 --pos_lambda_gen=15 --lambda_e_latent=1 --lambda_e_pos=1 --cond_lambda=1 --load_encoder=1
 `
 
 Note that the training script has been refactored and has not been fully validated yet. It may not reproduce exactly the results from the paper. Please let the authors know if results are not at reasonable levels!
