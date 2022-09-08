@@ -16,8 +16,8 @@ from torch_ema import ExponentialMovingAverage
 from torchvision.utils import save_image
 from tqdm import tqdm
 
-import curriculums_con as curriculums
-import datasets_con as datasets
+import curriculums as curriculums
+import datasets as datasets
 import pytorch_ssim
 from discriminators import discriminators_con as discriminators
 from generators import generators_con as generators

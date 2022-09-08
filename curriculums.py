@@ -84,7 +84,7 @@ def extract_metadata(curriculum, current_step):
 
 celeba = {
     0: {'batch_size': 12, 'num_steps': 12, 'img_size': 64, 'batch_split': 4, 'gen_lr': 6e-5, 'disc_lr': 2e-4, 'enc_lr': 2e-4, 'warm_up': 1},
-    int(150e3): {'batch_size': 12, 'num_steps': 12, 'img_size': 64, 'batch_split': 4, 'gen_lr': 6e-5, 'disc_lr': 2e-4, 'enc_lr': 2e-4, 'warm_up': 0},
+    int(280e3): {'batch_size': 12, 'num_steps': 12, 'img_size': 64, 'batch_split': 4, 'gen_lr': 6e-5, 'disc_lr': 2e-4, 'enc_lr': 2e-4, 'warm_up': 0},
     int(300e3): {},
 
     'fov': 12,
@@ -122,7 +122,7 @@ celeba = {
 carla = {
     0: {'batch_size': 9, 'num_steps': 48, 'img_size': 32, 'batch_split': 3, 'gen_lr': 4e-5, 'disc_lr': 4e-4, 'enc_lr': 4e-5, 'warm_up': 1},
     int(50e3): {'batch_size': 3, 'num_steps': 36, 'img_size': 64, 'batch_split': 3, 'gen_lr': 2e-5, 'disc_lr': 2e-4, 'enc_lr': 2e-4, 'warm_up': 1},
-    int(150e3): {'batch_size': 3, 'num_steps': 36, 'img_size': 64, 'batch_split': 3, 'gen_lr': 2e-5, 'disc_lr': 2e-4, 'enc_lr': 2e-4, 'warm_up': 0},
+    int(280e3): {'batch_size': 3, 'num_steps': 36, 'img_size': 64, 'batch_split': 3, 'gen_lr': 2e-5, 'disc_lr': 2e-4, 'enc_lr': 2e-4, 'warm_up': 0},
     int(300e3): {},
 
     'fov': 30,
@@ -159,7 +159,7 @@ carla = {
 srnchairs = {
     0: {'batch_size': 9, 'num_steps': 48, 'img_size': 32, 'batch_split': 3, 'gen_lr': 4e-5, 'disc_lr': 4e-4, 'enc_lr': 4e-5, 'warm_up': 1},
     int(50e3): {'batch_size': 3, 'num_steps': 36, 'img_size': 64, 'batch_split': 3, 'gen_lr': 2e-5, 'disc_lr': 2e-4, 'enc_lr': 2e-4, 'warm_up': 1},
-    int(150e3): {'batch_size': 3, 'num_steps': 36, 'img_size': 64, 'batch_split': 3, 'gen_lr': 2e-5, 'disc_lr': 2e-4, 'enc_lr': 2e-4, 'warm_up': 0},
+    int(280e3): {'batch_size': 3, 'num_steps': 36, 'img_size': 64, 'batch_split': 3, 'gen_lr': 2e-5, 'disc_lr': 2e-4, 'enc_lr': 2e-4, 'warm_up': 0},
     int(300e3): {},
 
     'fov': 52,
